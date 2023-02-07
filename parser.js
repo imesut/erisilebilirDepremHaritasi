@@ -40,8 +40,8 @@ getPage().then((parsed) => {
     cityString += `<table>
         <tr>
           <th>Konum</th>
-          <th>Wewalk ile aç</th>
           <th>Google ile aç</th>
+          <th>Wewalk ile aç</th>
         </tr>`
 
     let locations = city[4]
@@ -54,7 +54,7 @@ getPage().then((parsed) => {
       console.log(wewalkLink)
       console.log(googleLink)
 
-      cityString += '<tr><td>' + locationName + '</td><td><a href="' + wewalkLink + '">wewalk</a></td><td><a href="' + googleLink + '">google</a></td></tr>';
+      cityString += '<tr><td>' + locationName + '</td><td><a href="' + googleLink + '">google</a></td><td><a href="' + wewalkLink + '">wewalk</a></td></tr>';
 
     });
 
